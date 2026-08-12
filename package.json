@@ -1,0 +1,27 @@
+{
+  "name": "term-spreadsheet",
+  "version": "1.0.0",
+  "description": "Terminal-based spreadsheet editor with vim-like bindings and formula evaluation",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/index.ts",
+    "test": "vitest",
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts"
+  },
+  "keywords": ["spreadsheet", "terminal", "vim", "tui"],
+  "author": "Mohammad Hossinzehi",
+  "license": "MIT",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "mathjs": "^11.11.0"
+  },
+  "devDependencies": {
+    "@types/blessed": "^0.1.22",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^3.14.0",
+    "vitest": "^0.34.0"
+  }
+}
